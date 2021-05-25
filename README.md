@@ -1,7 +1,7 @@
 # aws-terraform
 ...
 module "rus-vpc" {
-  source = "rayslan/vpc/aws"
+  \n source = "rayslan/vpc/aws"
   version = "specify a version"
 
   tag-vpc-name     = "string"
