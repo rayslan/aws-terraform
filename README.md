@@ -1,5 +1,6 @@
 # aws-terraform
-...
+
+```
 module "rus-vpc" {
   source = "rayslan/vpc/aws"
   version = "specify a version"
@@ -22,4 +23,4 @@ module "rus-vpc" {
   ngw-name = "string"
 
 }
-...
+```
