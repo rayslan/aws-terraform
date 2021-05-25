@@ -22,3 +22,5 @@ variable "public-subnet-names" {
 
 variable "private-route-table-name" {}
 variable "public-route-table-name" {}
+variable "igw-name" {}
+variable "ngw-name" {}
