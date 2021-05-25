@@ -1,26 +1,24 @@
 # aws-terraform
 ...
-module "name" {
+module "rus-vpc" {
+  source = "rayslan/vpc/aws"
 
-source = "provide a source here"
+  tag-vpc-name     = "string"
+  region           = "specify a region"
+  cidr_block       = "x.x.x.x/x"
+  instance_tenancy = "default / dedicated"
 
-region = "specify a region"
-cidr_block = "x.x.x.x/x"
-tag-vpc-name = "string"
-instance_tenancy = "default / dedicated"
-cidr-block-private-subnets = ["x.x.x.x/x", "x.x.x.x/x", "x.x.x.x/x"] #Creates 3 private subnets
+  cidr-block-private-subnets = ["x.x.x.x/x", "x.x.x.x/x", "x.x.x.x/x"] #Creates 3 private subnets
+  cidr-block-public-subnets  = ["x.x.x.x/x", "x.x.x.x/x", "x.x.x.x/x"] #Creates 3 public subnets
 
-cidr-block-public-subnets = ["x.x.x.x/x", "x.x.x.x/x", "x.x.x.x/x"] #Creates 3 public subnets
+  private-subnet-names = ["x.x.x.x/x", "x.x.x.x/x", "x.x.x.x/x"]
+  public-subnet-names  = ["x.x.x.x/x", "x.x.x.x/x", "x.x.x.x/x"]
 
-private-subnet-names = ["x.x.x.x/x", "x.x.x.x/x", "x.x.x.x/x"]
+  private-route-table-name = "string"
+  public-route-table-name  = "string"
 
-public-subnet-names = ["x.x.x.x/x", "x.x.x.x/x", "x.x.x.x/x"]
-
-private-route-table-name = "string"
-public-route-table-name = "string"
-igw-name = "string"
-ngw-name = "string"
-
+  igw-name = "string"
+  ngw-name = "string"
 
 }
 ...
