@@ -24,9 +24,9 @@ module "rus-vpc" {
 
 #----------Outputs---------#
 
-  <!-- output "vpc-info" {
+ /* output "vpc-info" {
     value = aws_vpc.my-vpc
-} -->
+}*/
 
 }
 ```
