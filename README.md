@@ -22,5 +22,11 @@ module "rus-vpc" {
   igw-name = "string"
   ngw-name = "string"
 
+#----------Outputs---------#
+
+  <!-- output "vpc-info" {
+    value = aws_vpc.my-vpc
+} -->
+
 }
 ```
