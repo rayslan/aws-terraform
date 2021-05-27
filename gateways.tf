@@ -7,7 +7,7 @@ resource "aws_internet_gateway" "igw" {
 }
 
 resource "aws_nat_gateway" "ngw" {
-  subnet_id = aws_subnet.public-subnet1.id
+  subnet_id     = aws_subnet.public-subnet1.id
   allocation_id = aws_eip.eip.id
   tags = {
     "Name" = var.ngw-name #This goes to module
