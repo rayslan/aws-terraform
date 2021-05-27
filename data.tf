@@ -1,3 +1,3 @@
 data "aws_availability_zones" "name" {
-  state = "available"
+  all_availability_zones = true
 }
